@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style>
+    .disabled {
+        pointer-events: none;
+        opacity: 0.3;
+    }
+</style>
+</head>
+
+<body class="bg-slate-300" >
+    <header >
+     
+        <nav class="bg-  h-36 pt-4   ">
+            
+            <div class="flex justify-between items-center p-4  mx-auto max-w-screen-xl border border-white  rounded-xl bg-white  ">
+               <div class="flex items-center gap-4">
+                  <img src="assets/logo.png" alt="">
+                  <h2 class="text-xl ">Dev<span class="font-bold">Board</span></h2>
+               </div>
+               <div class="flex items-center gap-4 ">
+                  <div class="flex items-center gap-4 bg-slate-200 p-2 rounded-xl">
+                    <img src="assets/checkbox.png" alt="">
+                    <span id="number" class="text-xl font-bold">20</span>
+                 </div>
+                 <div class="bg-slate-200  p-2 rounded-full">
+                  <button id="multi-btn"><img id="multi" src="assets/theme-btn.png" alt=""></button>
+                 </div>
+               </div>
+        
+            </div>
+        </nav>
+      
+  </header>
+  <main class=" bg-slate-">
+    <section class="">
+        <!-- main-div -->
+        <div class="grid grid-cols-4 gap-8 mx-auto max-w-screen-xl bg-whit ">
+            <!-- first-div -->
+            <div class="grid col-span-3 bg-white  p-4 rounded-xl">
+             <!-- first-row -->
+             <div class="flex gap-4"> 
+
+                <div class="flex justify-center items-center w-1/4 p-4 gap-2 bg-slate-200 rounded-xl">
+                    <div class="bg-white rounded-full ">
+                        <img class="p-2" src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                      <h3 class="text-2xl ">Task Assigned </h3>
+                      <span id="task-number" class="text-3xl font-bold" >6</span>
+                    </div>
+                </div>
+                <!-- next-------------- -->
+                <div id="next" class="flex justify-center items-center bg-linear-to-r/srgb from-indigo-500 to-teal-400 rounded-xl w-2/4">
+                    <div>
+                        <img src="assets/board.png" alt="">
+                    </div>
+                    <p class="text-2xl text-white">Discover Something<br> New Today!</p>
+
+                </div>
+                <!-- next------- -->
+                <div class="flex justify-center items-center w-1/4 p-4 gap-2 bg-slate-200 rounded-xl">
+                    <div class="bg-white rounded-full ">
+                        <img class="p-2" src="assets/calender.png" alt="">
+                    </div>
+                    <div id="date-time">
+                      <!-- <h3 class="text-2xl "></h3>
+                      <span class="text-xl font-bold" >Jul 28 2025 </span> -->
+                    </div>
+                </div>
+                
+             </div>
+             <div class="border-b-2 border-dotted border-slate-200 my-6"></div>
+
+             <!-- div-3 col - 3 row -->
+              <div class="grid grid-cols-3 gap-4">
+                <!-- shopEase div-1 -->
+                 <div class="bg-slate-200 rounded-xl p-2">
+                    <div class="space-y-4">
+                        <small class="text-black text-lg">ShopEase</small>
+                        <h1 class="text-2xl font-bold">Fix Mobile Button Issue </h1>
+                        <p class="bg-white p-2 rounded-xl">Debug using Chromebr <br> DevTools, check for overlapping</p>
+                    </div>
+                    <div class="border-b-2 border-dotted border-slate-400 my-6"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <small class="text-lg">Deadline</small>
+                            <h5 class="text-black text-xl">21 March 2025</h5>
+                        </div>
+                        <button id="btn-1" class="complete-btn bg-blue-600 text-white p-2 rounded-xl">Complete</button>
+                    </div>
+                </div>
+                <!-- cloudYnc div-2 -->
+                 <div class="bg-slate-200 rounded-xl p-2">
+                    <div class="space-y-4">
+                        <small class="text-black text-lg">CloudSync</small>
+                        <h1 class="text-2xl font-bold">Add Dark Mode </h1>
+                        <p class="bg-white p-2 rounded-xl">Debug using Chromebr <br> DevTools, check for overlapping</p>
+                    </div>
+                    <div class="border-b-2 border-dotted border-slate-400 my-6"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <small class="text-lg">Deadline</small>
+                            <h5 class="text-black text-xl">21 March 2025</h5>
+                        </div>
+                        <button class="complete-btn bg-blue-600 text-white p-2 rounded-xl">Complete</button>
+                    </div>
+                </div>
+                <!-- SwiftPay div-3 -->
+                 <div class="bg-slate-200 rounded-xl p-2">
+                    <div class="space-y-4">
+                        <small class="text-black text-lg">Swiftpay</small>
+                        <h1 class="text-2xl font-bold">Optimize  Home page </h1>
+                        <p class="bg-white p-2 rounded-xl">Debug using Chromebr <br> DevTools, check for overlapping</p>
+                    </div>
+                    <div class="border-b-2 border-dotted bg-slate-500 my-6"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <small class="text-lg">Deadline</small>
+                            <h5 class="text-black text-xl">21 March 2025</h5>
+                        </div>
+                        <button class="complete-btn bg-blue-600 text-white p-2 rounded-xl">Complete</button>
+                    </div>
+                </div>
+                <!-- Googlr Lic-div 4 -->
+                 <div class="bg-slate-200 rounded-xl p-2">
+                    <div class="space-y-4">
+                        <small class="text-black text-lg">Google Lic</small>
+                        <h1 class="text-2xl font-bold"> Integrate OpenAI API </h1>
+                        <p class="bg-white p-2 rounded-xl">Debug using Chromebr <br> DevTools, check for overlapping</p>
+                    </div>
+                    <div class="border-b-2 border-dotted bg-slate-500 my-6"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <small class="text-lg">Deadline</small>
+                            <h5 class="text-black text-xl">21 March 2025</h5>
+                        </div>
+                        <button class="complete-btn bg-blue-600 text-white p-2 rounded-xl">Complete</button>
+                    </div>
+                </div>
+                <!-- Glassdoor div-5-->
+                 <div class="bg-slate-200 rounded-xl p-2">
+                    <div class="space-y-4">
+                        <small class="text-black text-lg">Glassdoor</small>
+                        <h1 class="text-2xl font-bold">Improve Job searching  </h1>
+                        <p class="bg-white p-2 rounded-xl">Debug using Chromebr <br> DevTools, check for overlapping</p>
+                    </div>
+                    <div class="border-b-2 border-dotted bg-slate-500 my-6"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <small class="text-lg">Deadline</small>
+                            <h5 class="text-black text-xl">21 March 2025</h5>
+                        </div>
+                        <button class="complete-btn bg-blue-600 text-white p-2 rounded-xl">Complete</button>
+                    </div>
+                </div>
+                <!-- Meta div-6-->
+                 <div class="bg-slate-200 rounded-xl p-2">
+                    <div class="space-y-4">
+                        <small class="text-black text-lg">Meta</small>
+                        <h1 class="text-2xl font-bold">Add new emoji 🤲 </h1>
+                        <p class="bg-white p-2 rounded-xl">Debug using Chromebr <br> DevTools, check for overlapping</p>
+                    </div>
+                    <div class="border-b-2 border-dotted bg-slate-500 my-6"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <small class="text-lg">Deadline</small>
+                            <h5 class="text-black text-xl">21 March 2025</h5>
+                        </div>
+                        <div class="complete">
+                          <button id="complete-btn" class="complete-btn bg-blue-600 text-white p-2 rounded-xl">Complete</button>
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+            </div>
+
+
+
+
+          <!-- second-div -->
+            <div id="second-id" class="second-class   bg-white">
+
+                <div class=" p-4 ">
+                     <div class="flex justify-center items-center gap-2">
+                       <img src="assets/activity.png" alt="">
+                       <h4 class="text-xl text-black">Activity Log</h4>
+                     </div>
+                     <div class="flex justify-center items-center pt-2">
+                       <button class="bg-blue-400 p-2 text-white text-lg rounded-lg">Clear History</button>
+                     </div>
+                </div>
+
+                  <div class="border-b-2 border-dotted border-slate-200 my-6"></div>
+
+                  <div id="ac-history" class=" m-4 p-2 space-y-6 rounded-xl  bg-slate-200"></div>
+                
+             
+             
+
+             </div>
+            
+            
+        </div>
+    </section>
+  </main>
+  <script src="script/event.js"></script>
+
+  <!-- <script src="script/event2.js"></script> -->
+
+  <script>
+   document.getElementById('next').addEventListener('click', function ( ) {
+    window.location.href = 'question.html'
+   });
+
+     const colors =['red', 'blue', 'orange', 'yellow'];
+     let index = 0;
+
+   
+    document.getElementById('multi-btn').addEventListener('click', function (){
+
+        document.body.style.backgroundColor = colors[index];
+        index = (index + 1) % colors.length;
+      
+    });
+
+    function updateDateTime (){
+    const now = new Date ();
+    const dateTimeString = now.toLocaleTimeString();
+    document.getElementById('date-time').textContent = dateTimeString;
+
+}
+
+setInterval(updateDateTime, 1000);
+window.onload =updateDateTime;
+
+  </script>
+  
+</body>
+</html>
