@@ -139,7 +139,7 @@ for(const btn of completeBtn){
         const p = document.createElement('p');
         
         p.innerText= `
-        you will fix mobile button isuue hhhhhhhhhhhh ${time}
+        you will fix mobile button isuue   ${time}
 
         `
         history.appendChild(p)
