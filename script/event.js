@@ -5,7 +5,10 @@ const completeBtn =document.getElementsByClassName('complete-btn');
 
 
 for(const btn of completeBtn){
-    btn.addEventListener('click', function () {
+    btn.addEventListener('click', function (event) {
+// event.target.parentNode;
+// const title = (event.target.parentNode.parentNode.children[0].children[1]);
+
 
         const number =document.getElementById('number').innerText;
         const convertedNumber = parseInt(number);
@@ -28,9 +31,13 @@ for(const btn of completeBtn){
 
             const time = new Date().toLocaleTimeString();
             const p = document.createElement('p');
+
+            event.target.parentNode;
+            const title = (event.target.parentNode.parentNode.children[0].children[1]).innerText;
+
             
             p.innerText= `
-            you will fix mobile button isuue ${time}
+            you have complete the task ${title} at ${time}
 
             `
             history.appendChild(p)
@@ -51,9 +58,12 @@ for(const btn of completeBtn){
 
         const time = new Date().toLocaleTimeString();
         const p = document.createElement('p');
+
+        event.target.parentNode;
+        const title = (event.target.parentNode.parentNode.children[0].children[1]).innerText;
         
         p.innerText= `
-        you will fix mobile button isuue ${time}
+        you have complete the task ${title} at ${time}
 
         `
         history.appendChild(p)
@@ -74,9 +84,13 @@ for(const btn of completeBtn){
 
             const time = new Date().toLocaleTimeString();
             const p = document.createElement('p');
+
+            event.target.parentNode;
+            const title = (event.target.parentNode.parentNode.children[0].children[1]).innerText;
+            
             
             p.innerText= `
-            you will fix mobile button isuue ${time}
+            you have complete the task ${title}  at ${time}
 
             `
             history.appendChild(p)
@@ -94,9 +108,14 @@ for(const btn of completeBtn){
 
         const time = new Date().toLocaleTimeString();
         const p = document.createElement('p');
+
+        event.target.parentNode;
+        const title = (event.target.parentNode.parentNode.children[0].children[1]).innerText;
+
+        
         
         p.innerText= `
-        you will fix mobile button isuue ${time}
+        you have complete the task ${title} at ${time}
 
         `
         history.appendChild(p)
@@ -114,10 +133,13 @@ for(const btn of completeBtn){
 
         const time = new Date().toLocaleTimeString();
         const p = document.createElement('p');
+
+        event.target.parentNode;
+        const title = (event.target.parentNode.parentNode.children[0].children[1]).innerText;
         
         p.innerText= `
-        you have complete the task at ${time}
-
+    
+              you have complete the task ${title} at ${time}
         `
         history.appendChild(p)
 
@@ -137,9 +159,12 @@ for(const btn of completeBtn){
 
         const time = new Date().toLocaleTimeString();
         const p = document.createElement('p');
+
+        event.target.parentNode;
+        const title = (event.target.parentNode.parentNode.children[0].children[1]).innerText;
         
         p.innerText= `
-        you will fix mobile button isuue   ${time}
+         you have complete the task ${title} at ${time}
 
         `
         history.appendChild(p)
